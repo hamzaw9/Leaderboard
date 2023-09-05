@@ -12,6 +12,14 @@ li {
   list-style-type: none;
 }
 
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 55px;
+  margin: 18px 0 40px;
+  text-align: center;
+  color: teal;
+}
+
 .scoreboard-container {
   width: 70%;
   margin: 0 auto;
