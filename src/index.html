@@ -25,7 +25,33 @@
           <li>Name: 49</li>
         </div>
       </div>
-      <div id="add-score"></div>
+      <div id="add-score">
+        <h2>Add your Score</h2>
+        <form>
+          <div class="form-fields">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+
+            <label for="score">Score:</label>
+            <input
+              type="number"
+              id="score"
+              name="score"
+              placeholder="Your Score"
+              required
+            />
+          </div>
+          <div class="form-footer">
+            <button class="add-score-btn" type="submit">Add Score</button>
+          </div>
+        </form>
+      </div>
     </section>
   </body>
 </html>
