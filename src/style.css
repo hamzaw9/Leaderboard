@@ -23,7 +23,7 @@ h1 {
 .scoreboard-container {
   font-family: "cursive", sans-serif;
   width: 70%;
-  height: 65vh;
+  height: max-content;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -44,7 +44,8 @@ h1 {
   margin-bottom: 25px;
 }
 
-.refresh-btn {
+.refresh-btn,
+.add-score-btn {
   color: white;
   background-color: teal;
   border: 2px solid white;
@@ -55,7 +56,8 @@ h1 {
     padding-right 1s;
 }
 
-.refresh-btn:hover {
+.refresh-btn:hover,
+.add-score-btn:hover {
   color: teal;
   background-color: white;
   border: 2px solid teal;
@@ -76,4 +78,37 @@ h1 {
 
 .score-display li:nth-child(odd) {
   background-color: white;
+}
+
+#add-score {
+  width: 40%;
+}
+
+#add-score h2 {
+  padding-top: 8px;
+  margin-bottom: 25px;
+}
+
+#add-score-form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-bottom: 25px;
+}
+
+#add-score-form input {
+  color: teal;
+  padding: 12px 16px 12px 6px;
+  border-radius: 10px;
+  border: 2px solid teal;
+  font-size: 16px;
+  outline: none;
+}
+
+#add-score-form input:focus {
+  border-color: teal;
+}
+
+.add-score-btn {
+  float: right;
 }
