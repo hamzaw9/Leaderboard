@@ -21,8 +21,59 @@ h1 {
 }
 
 .scoreboard-container {
+  font-family: "cursive", sans-serif;
   width: 70%;
+  height: 65vh;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  background-color: #d3d3d3;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#scoreboard {
+  width: 40%;
+}
+
+.score-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  margin-bottom: 25px;
+}
+
+.refresh-btn {
+  color: white;
+  background-color: teal;
+  border: 2px solid white;
+  font-size: 17px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  transition: background-color 1s, border 1s, color 1s, padding-left 1s,
+    padding-right 1s;
+}
+
+.refresh-btn:hover {
+  color: teal;
+  background-color: white;
+  border: 2px solid teal;
+  padding-left: 8px;
+  padding-right: 16px;
+}
+
+.score-display {
+  border: 2px solid teal;
+  border-radius: 4px;
+  overflow-y: auto;
+  height: 45vh;
+}
+
+.score-display li {
+  padding: 8px;
+}
+
+.score-display li:nth-child(odd) {
+  background-color: white;
 }
