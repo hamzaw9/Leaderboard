@@ -53,3 +53,22 @@ async function refreshScores() {
 }
 
 refreshScores();
+
+async function submitScoreToApi() {
+  let URL =
+    "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/" +
+    gameId +
+    "/scores/";
+  const response = await fetch(URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      user: userName,
+      score: userScore,
+    }),
+  });
+}
+
+submitScoreToApi();
