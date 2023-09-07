@@ -52,11 +52,7 @@ h1 {
   font-size: 17px;
   padding: 4px 12px;
   border-radius: 4px;
-  transition:
-    background-color 1s,
-    border 1s,
-    color 1s,
-    padding-left 1s,
+  transition: background-color 1s, border 1s, color 1s, padding-left 1s,
     padding-right 1s;
 }
 
@@ -69,18 +65,18 @@ h1 {
   padding-right: 16px;
 }
 
-.score-display {
+#display-score {
   border: 2px solid teal;
   border-radius: 4px;
   overflow-y: auto;
   height: 45vh;
 }
 
-.score-display li {
+#display-score li {
   padding: 8px;
 }
 
-.score-display li:nth-child(odd) {
+#display-score li:nth-child(odd) {
   background-color: white;
 }
 
