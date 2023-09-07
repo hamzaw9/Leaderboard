@@ -4,6 +4,7 @@ const scoreForm = document.querySelector("#add-score-form");
 const userName = scoreForm.querySelector("#user-name").value;
 const userScore = scoreForm.querySelector("#user-score").value;
 const addScoreBtn = scoreForm.querySelector(".add-score-btn");
+const refreshBtn = document.querySelector(".refresh-btn");
 
 async function createNewGame() {
   const response = await fetch(
@@ -35,3 +36,20 @@ async function createNewGame() {
 }
 
 let gameId = await createNewGame();
+
+async function refreshScores() {
+  let URL =
+    "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/" +
+    gameId +
+    "/scores/";
+  const response = await fetch(URL);
+
+  if (response) {
+    const scores = await response.json();
+    console.log(scores);
+  } else {
+    console.error("Request failed with status:", response.status);
+  }
+}
+
+refreshScores();
