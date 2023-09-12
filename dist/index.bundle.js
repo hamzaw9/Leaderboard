@@ -1,3 +1,4 @@
+"use strict";
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
@@ -6,9 +7,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
+(self["webpackChunkleaderboard"] = self["webpackChunkleaderboard"] || []).push([["index"],{
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
@@ -16,7 +15,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, ``, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://leaderboard/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbutton {\n  cursor: pointer;\n}\n\nli {\n  list-style-type: none;\n}\n\nh2 {\n  color: teal;\n}\n\nh1 {\n  font-family: \"Courier New\", Courier, monospace;\n  margin: 18px 0 40px;\n  text-align: center;\n  font-size: 55px;\n  color: teal;\n}\n\n.scoreboard-container {\n  font-family: \"cursive\", sans-serif;\n  width: 70%;\n  height: max-content;\n  margin: 0 auto;\n  display: flex;\n  justify-content: space-between;\n  background-color: #d3d3d3;\n  border-radius: 8px;\n  padding: 20px;\n  border-bottom-right-radius: 50px;\n}\n\n#scoreboard {\n  width: 40%;\n}\n\n.score-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-top: 8px;\n  margin-bottom: 25px;\n}\n\n.refresh-btn,\n.add-score-btn {\n  color: white;\n  background-color: teal;\n  border: 2px solid white;\n  font-size: 17px;\n  padding: 4px 12px;\n  border-radius: 4px;\n  transition:\n    background-color 1s,\n    border 1s,\n    color 1s,\n    padding-left 1s,\n    padding-right 1s;\n}\n\n.refresh-btn:hover,\n.add-score-btn:hover {\n  background-color: white;\n  border: 2px solid teal;\n  padding-right: 16px;\n  padding-left: 8px;\n  color: teal;\n}\n\n#display-score {\n  border: 2px solid teal;\n  border-radius: 4px;\n  overflow-y: auto;\n  height: 45vh;\n}\n\n#display-score li {\n  padding: 8px;\n}\n\n#display-score li:nth-child(odd) {\n  background-color: white;\n}\n\n#add-score {\n  width: 40%;\n}\n\n#add-score h2 {\n  margin-bottom: 25px;\n  padding-top: 8px;\n}\n\n#add-score-form {\n  flex-direction: column;\n  margin-bottom: 25px;\n  display: flex;\n  gap: 35px;\n}\n\n#add-score-form input {\n  padding: 12px 16px 12px 6px;\n  border: 2px solid teal;\n  border-radius: 10px;\n  font-size: 16px;\n  outline: none;\n  color: teal;\n}\n\n#add-score-form input:focus {\n  border-color: teal;\n}\n\n.add-score-btn {\n  float: right;\n}\n\n@media only screen and (width <= 768px) {\n  h1 {\n    margin-bottom: 18px;\n  }\n\n  .scoreboard-container {\n    border-bottom-right-radius: 0;\n    flex-direction: column;\n    width: 85%;\n    gap: 25px;\n  }\n\n  #scoreboard,\n  #add-score {\n    width: 100%;\n  }\n\n  #display-score {\n    height: 26vh;\n  }\n\n  #add-score-form {\n    gap: 25px;\n  }\n}\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://leaderboard/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -116,88 +115,13 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nconsole.log(\"Hello world!\");\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nconst displayScore = document.querySelector('#display-score');\nconst scoreForm = document.querySelector('#add-score-form');\nconst refreshBtn = document.querySelector('.refresh-btn');\n\nconst createNewGame = async () => {\n  await fetch(\n    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games',\n    {\n      method: 'POST',\n      headers: {\n        'Content-Type': 'application/json',\n      },\n      body: JSON.stringify({\n        name: 'Code Mode',\n      }),\n    },\n  );\n};\n\nconst submitScoreToApi = async (userName, userScore) => {\n  const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/GpRLcTphddAlZCSJitez/scores/';\n  await fetch(URL, {\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application/json',\n    },\n    body: JSON.stringify({\n      user: userName,\n      score: userScore,\n    }),\n  });\n};\n\nconst fetchScores = async () => {\n  const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/GpRLcTphddAlZCSJitez/scores/';\n  const response = await fetch(URL);\n\n  const data = await response.json();\n\n  displayScore.innerHTML = '';\n  data.result.forEach((e) => {\n    displayScore.innerHTML += `<li>${e.user}: ${e.score}</li>`;\n  });\n};\n\nconst clearFields = () => {\n  const clear = document.querySelectorAll('input');\n  clear.forEach((e) => {\n    e.value = '';\n  });\n};\n\nrefreshBtn.addEventListener('click', () => {\n  fetchScores();\n});\n\nwindow.addEventListener('load', () => {\n  fetchScores();\n});\n\ndocument.querySelector('#add-score').addEventListener('click', (event) => {\n  const userName = scoreForm.querySelector('#user-name').value;\n  const userScore = scoreForm.querySelector('#user-score').value;\n  if (event.target.classList.contains('add-score-btn')) {\n    event.preventDefault();\n    submitScoreToApi(userName, userScore);\n    clearFields();\n  }\n});\n\ncreateNewGame();\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
 
 /***/ })
 
-/******/ 	});
-/************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/nonce */
-/******/ 	(() => {
-/******/ 		__webpack_require__.nc = undefined;
-/******/ 	})();
-/******/ 	
-/************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
-/******/ 	
-/******/ })()
-;
+},
+/******/ __webpack_require__ => { // webpackRuntimeModules
+/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+/******/ var __webpack_exports__ = (__webpack_exec__("./src/index.js"));
+/******/ }
+]);

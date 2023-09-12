@@ -4,8 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
-  <script defer src="main.js"></script></head>
+  <script defer src="/runtime.bundle.js"></script><script defer src="/index.bundle.js"></script></head>
   <body>
-    <h1>hello world!</h1>
+    <h1>Leaderboard</h1>
+
+    <section class="scoreboard-container">
+      <div id="scoreboard">
+        <div class="score-header">
+          <h2>Recent Scores</h2>
+          <button class="refresh-btn" type="button">Refresh</button>
+        </div>
+
+        <div id="display-score"></div>
+      </div>
+
+      <div id="add-score">
+        <h2>Add your Score</h2>
+        <form id="add-score-form">
+          <input
+            type="text"
+            id="user-name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <input
+            type="number"
+            id="user-score"
+            name="score"
+            placeholder="Your Score"
+            required
+          />
+        </form>
+        <button class="add-score-btn" type="submit">Add Score</button>
+      </div>
+    </section>
   </body>
 </html>
