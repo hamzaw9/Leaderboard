@@ -17,7 +17,7 @@ h2 {
 }
 
 h1 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   margin: 18px 0 40px;
   text-align: center;
   font-size: 55px;
@@ -25,7 +25,7 @@ h1 {
 }
 
 .scoreboard-container {
-  font-family: "cursive", sans-serif;
+  font-family: 'cursive', sans-serif;
   width: 70%;
   height: max-content;
   margin: 0 auto;
@@ -122,6 +122,16 @@ h1 {
   float: right;
 }
 
+@media only screen and (width <= 900px) {
+  .scoreboard-container {
+    width: 78%;
+  }
+
+  #scoreboard {
+    width: 50%;
+  }
+}
+
 @media only screen and (width <= 768px) {
   h1 {
     margin-bottom: 18px;
@@ -145,5 +155,11 @@ h1 {
 
   #add-score-form {
     gap: 25px;
+  }
+}
+
+@media only screen and (width <= 600px) {
+  h1 {
+    font-size: 42px;
   }
 }
