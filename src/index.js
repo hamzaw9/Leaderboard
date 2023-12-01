@@ -60,14 +60,17 @@ window.addEventListener('load', () => {
   fetchScores();
 });
 
-document.querySelector('#add-score').addEventListener('click', (event) => {
-  const userName = scoreForm.querySelector('#user-name').value;
-  const userScore = scoreForm.querySelector('#user-score').value;
-  if (event.target.classList.contains('add-score-btn')) {
-    event.preventDefault();
-    submitScoreToApi(userName, userScore);
-    clearFields();
-  }
-});
+document
+  .querySelector('#add-score')
+  .addEventListener('click', async (event) => {
+    const userName = scoreForm.querySelector('#user-name').value;
+    const userScore = scoreForm.querySelector('#user-score').value;
+    if (event.target.classList.contains('add-score-btn')) {
+      event.preventDefault();
+      await submitScoreToApi(userName, userScore);
+      clearFields();
+      fetchScores();
+    }
+  });
 
 createNewGame();
