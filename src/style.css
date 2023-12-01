@@ -153,3 +153,9 @@ h1 {
     gap: 25px;
   }
 }
+
+@media only screen and (width <= 600px) {
+  h1 {
+    font-size: 42px;
+  }
+}
