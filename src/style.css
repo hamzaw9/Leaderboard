@@ -17,7 +17,7 @@ h2 {
 }
 
 h1 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   margin: 18px 0 40px;
   text-align: center;
   font-size: 55px;
@@ -25,7 +25,7 @@ h1 {
 }
 
 .scoreboard-container {
-  font-family: "cursive", sans-serif;
+  font-family: 'cursive', sans-serif;
   width: 70%;
   height: max-content;
   margin: 0 auto;
@@ -57,11 +57,7 @@ h1 {
   font-size: 17px;
   padding: 4px 12px;
   border-radius: 4px;
-  transition:
-    background-color 1s,
-    border 1s,
-    color 1s,
-    padding-left 1s,
+  transition: background-color 1s, border 1s, color 1s, padding-left 1s,
     padding-right 1s;
 }
 
@@ -120,6 +116,16 @@ h1 {
 
 .add-score-btn {
   float: right;
+}
+
+@media only screen and (width <= 900px) {
+  .scoreboard-container {
+    width: 78%;
+  }
+
+  #scoreboard {
+    width: 50%;
+  }
 }
 
 @media only screen and (width <= 768px) {
